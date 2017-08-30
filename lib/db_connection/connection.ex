@@ -19,7 +19,7 @@ defmodule DBConnection.Connection do
   alias DBConnection.Backoff
 
   @pool_timeout  5_000
-  @timeout       15_000
+  @timeout       300_000
   @idle_timeout  1_000
 
   ## DBConnection.Pool API
