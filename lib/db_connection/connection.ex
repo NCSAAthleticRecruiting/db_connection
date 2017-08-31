@@ -18,7 +18,7 @@ defmodule DBConnection.Connection do
   require Logger
   alias DBConnection.Backoff
 
-  @pool_timeout  5_000
+  @pool_timeout  300_000
   @timeout       300_000
   @idle_timeout  1_000
 
