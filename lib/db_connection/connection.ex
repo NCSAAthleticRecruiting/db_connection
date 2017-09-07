@@ -20,7 +20,7 @@ defmodule DBConnection.Connection do
 
   @pool_timeout  300_000
   @timeout       300_000
-  @idle_timeout  1_000
+  @idle_timeout  10_000
 
   ## DBConnection.Pool API
 
