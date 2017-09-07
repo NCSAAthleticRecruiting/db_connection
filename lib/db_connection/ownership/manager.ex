@@ -7,7 +7,7 @@ defmodule DBConnection.Ownership.Manager do
   alias DBConnection.Ownership.ProxySupervisor
   alias DBConnection.Ownership.Proxy
 
-  @timeout 5_000
+  @timeout 300_000
 
   @callback start_link(module, opts :: Keyword.t) ::
     GenServer.on_start

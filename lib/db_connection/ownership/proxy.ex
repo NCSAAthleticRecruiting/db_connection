@@ -2,9 +2,9 @@ defmodule DBConnection.Ownership.Proxy do
   @moduledoc false
 
   use GenServer
-  @pool_timeout      5_000
-  @ownership_timeout 15_000
-  @timeout           15_000
+  @pool_timeout      300_000
+  @ownership_timeout 300_000
+  @timeout           300_000
 
   def start_link(manager, caller, pool, pool_opts) do
     GenServer.start_link(__MODULE__, {manager, caller, pool, pool_opts}, [])
